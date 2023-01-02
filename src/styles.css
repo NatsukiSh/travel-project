@@ -3,15 +3,21 @@ body {
   background: #272044;
 }
 
-.container {
+.container,
+section {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url(../img/river-daytime-with-flower.jpg);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
@@ -31,6 +37,7 @@ header h2 {
   font-size: 40px;
   line-height: 1;
   margin: 0;
+  letter-spacing: 5px;
 }
 
 header h3 {
@@ -45,6 +52,8 @@ header a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
+  margin-top: 30px;
+  display: inline-block;
   text-align: center;
   letter-spacing: 3px;
   text-decoration: none;
@@ -52,12 +61,48 @@ header a {
   background: white;
   color: #272044;
   padding: 16px 32px;
-  display: inline-block;
 }
 
 footer {
-  text-align: center;
-  margin-top: 20px;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url(../img/river-view-from-hill-daytime.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 40px 0 40px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 20px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin-left: 40px;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
 }
 
 @media (max-width: 900px) {
